@@ -12,14 +12,20 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
-}
-@media (max-width: 767px) {
     .hiden-on-mobile {
         display: none;
     }
 }
+@media (max-width: 767px) {
+    .center-on-mb {
+        text-align: center;
+    }
+    .padding-on-mb {
+        padding-left: 30px;
+    }
+}
 .pop-up-sing-up {
-   background-color:rgba(71, 61, 139, 0.196);
+    background-color:rgba(71, 61, 139, 0.196);
     border-radius: 20px;
     backdrop-filter: blur(5px);
     height: 600px;
@@ -47,4 +53,7 @@ body {
 }
 .mybutton:hover {
     background-color: rgb(243, 188, 136);
+}
+.centerbutton {
+    text-align: center;
 }
