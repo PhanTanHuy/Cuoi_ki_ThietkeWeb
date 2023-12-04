@@ -1,0 +1,9 @@
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.438);
+}
+.user-icon {
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.159);
+    border-radius: 10px;
+    color: white;
+}
