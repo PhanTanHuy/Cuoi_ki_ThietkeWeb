@@ -9,19 +9,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./singup.css">
+    <link rel="stylesheet" href="./successlogin.css">
     <link rel="stylesheet" href="../CSS/main.css">
-    <title>Index</title>
+    
+    <title>Tạo tài khoản thành công!</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(21, 21, 21);">
+    <nav class="navbar navbar-expand-sm" style="background-color: rgb(21, 21, 21);">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="color: white; font-weight: bold; font-size:x-large;">5Hacker</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="./index.html" style="color: white;">Trang chủ</a>
               </li>
@@ -33,9 +34,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" style="color: white;">Liên hệ/góp ý</a>
-              </li>         
-            </ul>
-            <div class="navbar-nav ms-auto mb-2 mb-lg-0" style=" padding-left: 10px; padding-right: 20px;">
+              </li>          
+            </ul>-->
+            <div class="navbar-nav ms-auto mb-2 mb-sm-0" style=" padding-left: 20px; padding-right: 20px;">
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <div class="row user-icon">
@@ -44,11 +45,10 @@
                   </div>
                 </a>
                 <ul class="dropdown-menu" data-bs-theme="dark">
-                  <li><a class="dropdown-item" href="./singup.html" >Đăng kí</a></li>
+                  <li><a class="dropdown-item" href="./index.html" >Đăng kí</a></li>
                   <li><a class="dropdown-item" href="./singin.html" >Đăng nhập</a></li>  
                 </ul>
               </li>  
-              
             </div>
           </div>
         </div>
@@ -57,32 +57,20 @@
       <!--Phân nội dung của mội người nằm trong phần này-->
       <div class="container">
         <div class="row pop-up-sing-up" style="color:rgb(240, 221, 203);">
-            <div class="col-md-7 hiden-on-mobile">
+            <div class="col-12">
                 <h3 class="text-center" style="margin-top: 30px;  font-family:Arial, Helvetica, sans-serif; font-weight: bolder;">Well come to 5Hacker</h3>
-                <div style="margin-top: 120px; padding-left: 30px; padding-right: 30px; font-size: large;">Nền tảng bán khóa học và tấn công mạng hàng đầu Việt Nam</div>
-                <div style="margin-top: 30px; padding-left: 30px; padding-right: 30px; font-size: large;">Chỉ với 3 bước, bạn sẽ được chúng tôi đào tạo thành Hacker hàng đầu vũ trụ</div>
-                <ul style="padding-left: 50px;">
-                  <li>Tạo tài khoản</li>
-                  <li>Đăng nhập</li>
-                  <li>Mua khóa học</li>
-                </ul>   
-            </div>
-            <div class="col-md-5 col-12 padding-on-mb" style="padding-right: 30px;">
-                <h4 style="margin-top: 30px; margin-bottom: 20px; font-weight: bold;" class="center-on-mb">Tạo tài khoản</h4>
-                <div>
-                  <label for="exampleFormControlInput1" class="form-label" style="font-weight: bold;">Tên tài khoản</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Điền gì vào cũng được">
+                <div class="row text-center" style="margin-top: 50px; color: rgb(246, 106, 67);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                    </svg>
                 </div>
-                <label style="margin-top: 10px; margin-bottom: 10px; font-weight: bold;" for="inputPassword5" class="form-label">Mật khẩu</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                <label style="margin-top: 10px; margin-bottom: 10px; font-weight: bold;" for="inputPassword5" class="form-label">Xác nhận lại mật khẩu</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                <div class="centerbutton"><button class="mybutton" style="margin-top: 20px;  height: 33px; width: 80px; border: none; border-radius: 5px;">Đăng kí</button></div>
-                <div style="margin-top: 20px;">Nếu bạn đã có tài khoản, hãy tới trang <a style="color: rgb(102, 242, 255);" href="./singin.html">đăng nhập</a></div>
-            </div>
-            <div style="color:rgb(240, 221, 203); padding-left: 30px; padding-right: 30px;">
-              Hãy chắc chắn rằng bạn đã đọc <a href="" style="color: rgb(255, 131, 131);">Điều khoản sử dụng</a> của công ty 5Hacker chúng tôi và vui lòng xem <a href="" style="color: rgb(255, 131, 131);">Điều khoản bảo mật </a>trước khi tạo tài khoản.
-            </div>
+                <h3 class="text-center" style="margin-top: 30px;  font-family:Arial, Helvetica, sans-serif; font-weight: bolder;">Tạo tài khoản thành công!</h3>
+                <div class="row text-center">
+                    <div class="text-center"><button class="super-button" onclick="dangnhap();" style="margin-top: 70px;">Đăng nhập ngay</button></div>
+                </div>
+                <div class="text-center" style="position: absolute; bottom: 10px; right: 20%; left: 20%;">© 5Hacker company</div>
+            </div>    
         </div>
        
       </div>
@@ -137,4 +125,11 @@
         </footer>
     </div>
 </body>
+    <script>
+        function dangnhap() {
+            setTimeout(function() {
+            window.location.href = "./singin.html";
+            }, 1000);
+        }
+    </script>
 </html>
