@@ -1,0 +1,45 @@
+.mautrang {
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 70px;
+    opacity: 0;
+    margin-left: 50px;
+    
+    max-width: 300px;
+}
+
+@keyframes chuyenDong {
+    from {   
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes doiMau {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.397);
+    }
+}
+.traisangphai {
+    animation: chuyenDong 1s ease 0.8s 1 normal forwards;  
+    
+}
+.hinhnen {
+    background-image: url(./anh_nen/maytinh2.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+.hieuung {
+    animation: doiMau 1s ease 0.8s 1 normal forwards;  
+}
+
