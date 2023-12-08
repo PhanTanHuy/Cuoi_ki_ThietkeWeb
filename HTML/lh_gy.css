@@ -62,7 +62,7 @@
 }
 @media (max-width: 768px){
     .minheight {
-        height: 750px;
+        height: 850px;
     }
 }
 @media (min-width: 768px){
@@ -95,7 +95,7 @@
 }
 .icon-card {
     margin-top: 5%;
-    font-size:100px;
+    font-size: 100px;
 }
 .maincard {
     border-radius: 5px;
