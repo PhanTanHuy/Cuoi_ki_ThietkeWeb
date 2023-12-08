@@ -5,7 +5,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     margin-top: 70px;
     opacity: 0;
-    margin-left: 50px;
+    margin-left: 30px;
     
     max-width: 300px;
 }
@@ -13,11 +13,12 @@
 @keyframes chuyenDong {
     from {   
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-30px);
     }
     to {
         opacity: 1;
         transform: translateX(0);
+
     }
 }
 @keyframes doiMau {
@@ -29,7 +30,7 @@
     }
 }
 .traisangphai {
-    animation: chuyenDong 1s ease 0.8s 1 normal forwards;  
+    animation: chuyenDong 1s ease 1s 1 normal forwards;  
     
 }
 .hinhnen {
@@ -42,4 +43,70 @@
 .hieuung {
     animation: doiMau 1s ease 0.8s 1 normal forwards;  
 }
+.tieude {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 0;
+}
+@keyframes chuyenDongTD {
+    from {   
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
 
+    }
+}
+@media (max-width: 768px){
+    .minheight {
+        height: 750px;
+    }
+}
+@media (min-width: 768px){
+    .minheight {
+        height: 550px;
+    }
+}
+.duoilentren {
+    animation: chuyenDongTD 1s ease 1.5s 1 normal forwards;
+}
+.minheight {
+    min-height: 50vh;
+}
+.mar_button {
+    margin-bottom: 20px;
+}
+.mybutton {
+    border: none;
+    background: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    border-bottom: solid 0.5px;
+    transition: transform 0.3s ease;
+}
+
+.zom:hover .mybutton{
+    transform: translateY(-10px);
+}
+i {
+    cursor: pointer;
+}
+/* Hieu ung o day */
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(60px);
+    transition: all 1.5s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.contact {
+    min-height: 40vh;
+}
