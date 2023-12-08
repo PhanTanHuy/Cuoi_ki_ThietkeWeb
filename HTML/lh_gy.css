@@ -94,8 +94,8 @@
     font-weight: 500;
 }
 .icon-card {
-    margin-top: 15%;
-
+    margin-top: 5%;
+    font-size:100px;
 }
 .maincard {
     border-radius: 5px;
@@ -120,9 +120,7 @@
         font-size: 60px;
     }
 }
-.icon-card {
-    font-size:100px;
-}
+
 /* .text-right {
     text-align: right;
 } */
