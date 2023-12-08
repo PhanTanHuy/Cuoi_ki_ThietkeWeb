@@ -74,7 +74,7 @@
     animation: chuyenDongTD 1s ease 1.5s 1 normal forwards;
 }
 .minheight {
-    min-height: 50vh;
+    min-height: 60vh;
 }
 .mar_button {
     margin-bottom: 20px;
@@ -85,15 +85,52 @@
     color: white;
     font-size: x-large;
     font-weight: bold;
-    border-bottom: solid 0.5px;
+    border-bottom: solid 1px;
     transition: transform 0.3s ease;
 }
+/* phần card */
+.text-card {
+    font-size: x-large;
+    font-weight: 500;
+}
+.icon-card {
+    margin-top: 15%;
 
+}
+.maincard {
+    border-radius: 5px;
+    background-color: rgb(209, 178, 155);
+    backdrop-filter: blur(5px);
+    box-shadow: -5px 5px 10px rgb(21,21,21);
+}
+.maincard2 {
+    border-radius: 5px;
+    background-color: rgb(209, 178, 155);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px rgb(21,21,21);
+}
+@media (max-width: 567px){
+    .maincard {
+        box-shadow: 0px 5px 10px rgb(21,21,21);
+    }
+    .maincard2 {
+        box-shadow: 0px 5px 10px rgb(21,21,21);
+    }
+}
+/* .text-right {
+    text-align: right;
+} */
+/* ********** */
 .zom:hover .mybutton{
     transform: translateY(-10px);
 }
 i {
     cursor: pointer;
+}
+.tagcard {
+    width: 100%;
+    height: 240px;
+    margin-left: 0;
 }
 /* Hieu ung o day */
 .hidden {
@@ -108,5 +145,18 @@ i {
     transform: translateX(0);
 }
 .contact {
-    min-height: 40vh;
+    min-height: 70vh;
+    padding: 0;
+}
+
+/* hieu ung slide */
+.hidden-showslideR {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+.showslideR {
+    opacity: 1;
+    transform: translateX(0);
 }
