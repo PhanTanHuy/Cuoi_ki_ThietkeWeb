@@ -116,6 +116,12 @@
     .maincard2 {
         box-shadow: 0px 5px 10px rgb(21,21,21);
     }
+    .icon-card {
+        font-size: 60px;
+    }
+}
+.icon-card {
+    font-size:100px;
 }
 /* .text-right {
     text-align: right;
