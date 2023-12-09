@@ -10,6 +10,16 @@
     max-width: 300px;
 }
 
+@media (max-width: 768px){
+    .hide-on-mobile {
+        display: none;
+    }
+}
+@media (min-width: 769px){
+    .hide-on-desktop {
+        display: none;
+    }
+}
 @keyframes chuyenDong {
     from {   
         opacity: 0;
@@ -81,13 +91,29 @@
 }
 .mybutton {
     border: none;
-    background: none;
+    background-color: transparent;
+    outline: none;
     color: white;
     font-size: x-large;
     font-weight: bold;
-    border-bottom: solid 1px;
+    position: relative;
     transition: transform 0.3s ease;
+
 }
+.mybutton::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    border: none;
+    background-color: #6a5af9;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
 /* phần card */
 .text-card {
     font-size: x-large;
@@ -102,6 +128,17 @@
     background-color: rgb(209, 178, 155);
     backdrop-filter: blur(5px);
     box-shadow: -5px 5px 10px rgb(21,21,21);
+}
+@media (max-width: 768px) {
+   .maincard {
+    
+    padding-bottom: 10%;
+   }
+   .maincard2 {
+    
+    padding-bottom: 10%;
+   }
+   
 }
 .maincard2 {
     border-radius: 5px;
@@ -128,6 +165,9 @@
 .zom:hover .mybutton{
     transform: translateY(-10px);
 }
+.zom:hover .mybutton::before {
+    height: 100%;
+}
 i {
     cursor: pointer;
 }
@@ -141,7 +181,7 @@ i {
     opacity: 0;
     filter: blur(3px);
     transform: translateY(60px);
-    transition: all 1.5s;
+    transition: all 1s;
 }
 .show {
     opacity: 1;
