@@ -14,6 +14,9 @@
     .hide-on-mobile {
         display: none;
     }
+    .hidden {
+        transition-delay: 0s;
+    }
 }
 @media (min-width: 769px){
     .hide-on-desktop {
@@ -182,6 +185,7 @@ i {
     filter: blur(3px);
     transform: translateY(60px);
     transition: all 1s;
+    transition-delay: 2s;
 }
 .show {
     opacity: 1;
