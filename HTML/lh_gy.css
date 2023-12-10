@@ -84,7 +84,7 @@
     }
 }
 .duoilentren {
-    animation: chuyenDongTD 1s ease 1.5s 1 normal forwards;
+    animation: chuyenDongTD 1s ease 0.5s 1 normal forwards;
 }
 .minheight {
     min-height: 60vh;
@@ -185,7 +185,7 @@ i {
     filter: blur(3px);
     transform: translateY(60px);
     transition: all 1s;
-    transition-delay: 2s;
+    transition-delay: 0.5s;
 }
 .show {
     opacity: 1;
@@ -193,7 +193,7 @@ i {
     transform: translateX(0);
 }
 .contact {
-    min-height: 70vh;
+    min-height: 520px;
     padding: 0;
 }
 
