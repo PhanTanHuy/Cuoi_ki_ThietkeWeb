@@ -9,9 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./store.css">
+   
     <link rel="stylesheet" href="../CSS/main.css">
-    <title>Giỏ hàng</title>
+    <title>Index</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm" style="background-color: rgb(21, 21, 21);">
@@ -26,10 +26,10 @@
                 <a class="nav-link" href="./trangchu.html" style="color: white;">Trang chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"href="#" style="color: white;">Giới thiệu</a>
+                <a class="nav-link" href="./gt.html" style="color: white;">Giới thiệu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white;">Danh sách</a>
+                <a class="nav-link" href="./ds.html" style="color: white;">Danh sách</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./lienhe_gopy.html" style="color: white;">Liên hệ/góp ý</a>
@@ -55,64 +55,12 @@
       </nav>
 
       <!--Phân nội dung của mội người nằm trong phần này-->
-      <div class="container-fluid" style="margin-top: 30px; margin-bottom: 50px;">
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <h2>Giỏ hàng</h2>
-
-            <div id="addProductInput" style="margin-bottom: 20px;">
-              <div class="row">
-                <div class="col-5"><input type="text" class="form-control" style="border: solid 0.5px;" id="productCode" placeholder="Nhập mã khóa học"></div>
-                <div class="col-5"> <button class="btn btn-success" onclick="addProduct()">Thêm</button></div>
-                
-               
-              </div>
-              <div id="thongbao" style="color: red;"></div>
-            </div>
-
-            <table id="cartTable" class="table">
-              <thead>
-                <tr>
-                  <th>Khóa học</th>
-                  <th>Mã khóa học</th>
-                  <th>Giá tiền</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-               <tr>
-                <td><img src="./anh_store/js.jpg"> </td>
-                <td></td>
-                <td></td>
-                <td><button class="btn btn-danger">Xóa</button></td>
-               </tr>
-               <tr>
-                <td><img src="./anh_store/py.jpg"></td>
-                <td></td>
-                <td></td>
-                <td><button class="btn btn-danger">Xóa</button></td>
-               </tr>
-               <tr>
-                <td><img src="./anh_store/data.jpg"></td>
-                <td></td>
-                <td></td>
-                <td><button class="btn btn-danger">Xóa</button></td>
-               </tr>
-               
-              </tbody>
-            </table>
-            
-            <div style="display: flex; justify-content: end;">
-              <div style="margin-right: 20px;" class="text-center">
-                <div style="margin-bottom: 10px;" id="totalAmount">Tổng: $<span id="totalValue">0.00</span></div>
-                <button class="btn btn-success">Thanh toán</button>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-1"></div>
-        </div>
+      <div class="container">
+       <div class="row text-center" style="height: 900px;">
+        <h1 >Nội dung làm trong cái container này nha (lưu ý mọi div con đều phải nằm trong div cha có class container và một div cha nhỏ hơn là class row sau đó mới chia col để làm)</h1>
+        
+      </div>
+       
       </div>
       <!--Phân nội dung của mội người nằm trên phần này-->
 
@@ -165,115 +113,4 @@
         </footer>
     </div>
 </body>
-<script>
-
-var products = [];
-
-function addProduct() {
-  var productCodeInput = document.getElementById("productCode");
-  var productCode = productCodeInput.value;
-
- 
-  if (productCode.trim() !== "") {
-    document.getElementById('thongbao').innerHTML = ""
-  
-   
-    products.push({
-      productCode: productCode,
-      price: 19.99, 
-    });
-
-
-    updateCart();
-
-    productCodeInput.value = "";
-  }
-  else {
-    document.getElementById('thongbao').innerHTML = "Vui lòng nhập mã sản phẩm!"
-  }
-}
-
-function updateCart() {
-
-  var totalAmount = 0;
-
-  var cartTable = document.getElementById("cartTable");
-  var tbody = cartTable.getElementsByTagName("tbody")[0];
-
-  
-  tbody.innerHTML = `<tr>
-                <td><img src="./anh_store/js.jpg"> </td>
-                <td>#123<br><div class="macdinh">Khóa mặc định không thể xóa<div></td>
-                <td>Free</td>
-                <td><button class="btn btn-secondary">Xóa</button></td>
-               </tr>
-               <tr>
-                <td><img src="./anh_store/py.jpg"></td>
-                <td>#4321<br><div class="macdinh">Khóa mặc định không thể xóa<div></td>
-                <td>Free</td>
-                <td><button class="btn btn-secondary">Xóa</button></td>
-               </tr>
-               <tr>
-                <td><img src="./anh_store/data.jpg"></td>
-                <td>#6789<br><div class="macdinh">Khóa mặc định không thể xóa<div></td>
-                <td>Free</td>
-                <td><button class="btn btn-secondary">Xóa</button></td>
-               </tr>
-               <tr>
-                <td><img src="./anh_store/cpp.jpg"></td>
-                <td>#1113<br><div class="macdinh">Khóa mặc định không thể xóa<div></td>
-                <td>Free</td>
-                <td><button class="btn btn-secondary">Xóa</button></td>
-               </tr>
-               `;
-
-  products.forEach(function(product) {
-    var row = tbody.insertRow();
-    var cellImage = row.insertCell(0);
-    var cellCode = row.insertCell(1);
-    var cellPrice = row.insertCell(2);
-    var cellAction = row.insertCell(3);
-
-    
-    cellImage.innerHTML = '<img src="./anh_store/cpp.jpg" alt="Product Image" style="width: 150px;">';
-
-    
-    cellCode.textContent = product.productCode;
-    cellPrice.textContent = "$" + product.price.toFixed(2);
-
-    var deleteButton = document.createElement("button");
-    deleteButton.textContent = "Xóa";
-    deleteButton.className = "btn btn-danger"
-    deleteButton.onclick = function() {
-      deleteProduct(product.productCode);
-    };
-    cellAction.appendChild(deleteButton);
-    /*****/
-    
-    totalAmount += 19.99;
-    /*****/
-  });
-
-  document.getElementById("totalValue").textContent = totalAmount.toFixed(2);
-}
-
-function deleteProduct(productCode) {
- 
-  var index = products.findIndex(function(product) {
-    return product.productCode === productCode;
-  });
-
- 
-  if (index !== -1) {
-    products.splice(index, 1);
-
-    updateCart();
-  }
-}
-
-
-updateCart();
-
-
-</script>
 </html>

@@ -1,0 +1,21 @@
+#backtop {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid;
+    color: #2877FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+#backtop:hover {
+    background-color: #2877FA;
+    color: #fff;
+    border-color: #2877FA;
+}

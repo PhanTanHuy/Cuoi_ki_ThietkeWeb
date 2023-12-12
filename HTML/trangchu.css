@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --accent-color: #2c31cf;
+    --font-family: 'Mulish', sans-serif;
+    --main-color: #001860;
+    --body-color: #616161;
+    --heading-color: #111111;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --font-size: 16px;
+    --transition: all ease .5s;
+    --border-radius: 4px;
+    --box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px){
+    .hide-on-mobile {
+        display: none;
+    }
+}
+/* .navbar-expand-sm {
+    border-bottom: 1px solid #e8ebed;
+} */
+
+.carousel-item-1 {
+    background-color: #6828fa;
+    background: linear-gradient(to right, rgb(104, 40, 250),
+    rgb(255, 186, 164));
+}
+
+.carousel-item-2 {
+    background-color: #2877FA;
+    background: linear-gradient(to right, rgb(40, 119, 250),
+    rgb(103, 23, 205));
+}
+
+.carousel-item-3 {
+    background-color: #7612ff;
+    background: linear-gradient(to right, rgb(118, 18, 255),
+    rgb(5, 178, 255));
+}
+
+.carousel-item-4 {
+    background-color: #fe215e;
+    background: linear-gradient(to right, rgb(254, 33, 94),
+    rgb(255, 148, 21));
+}
+
+.carousel-item .col-7 {
+    color: #fff;
+    padding: 20px 50px;
+    font-weight: 700;
+}
+
+
+/*======container2========*/
+.border-bottom {
+    border-bottom: 3px solid #e8ebed;
+}
+
+.btnn {
+    color: var(--white-color);
+    background: var(--accent-color);
+    font-weight: 700;
+    transition: all 300ms;
+    padding: 8px 15px;
+}
+
+.btn-round {
+    color: var(--accent-color);
+    border: 1px solid;
+    background: none;
+}
+
+.btn-round:hover {
+    color: var(--white-color);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+/*======container3========*/
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--body-color);
+} */
+@media (min-width: 992px) {
+    .col-lg-20 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pt-100 {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-title span {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+
+/*==============*/
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.f5f6fa-bg-color {
+    background-color: #f5f6fa;
+}
+
+.single-affordable {
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.single-affordable__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    background-color: #edf5fc;
+    border-radius: 50%;
+}
+
+.single-affordable__image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+.single-affordable h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.single-affordable .two i {
+    background-color: #f4effa;
+    color: #925eca;
+}
+
+.single-affordable .three i {
+    background-color: #f4effa;
+    color: #fa9231;
+}
+
+
+.single-affordable .four i {
+    background-color: #ffeaea;
+    color: #fc2f5c;
+}
+
+.single-affordable:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+/*===section-title====*/
+.section-title {
+    max-width: 750px;
+    margin: -6px auto 50px;
+    text-align: center;
+}
+
+.section-title span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+}
+
+.section-title h2:last-child {
+    margin-bottom: 0;
+}
+
+h2, h3 {
+    color: var(--heading-color);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/*=====card=======*/
+.card {
+    margin-top: 30px;
+    transition: all .4s;
+    box-shadow: 0 2px 10px rgba(188, 188, 188, .5);
+}
+
+.card:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px #555;
+}
+
