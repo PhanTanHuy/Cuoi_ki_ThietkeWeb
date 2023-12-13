@@ -1,8 +1,9 @@
 body {
-    background-image: url('./anh_nen/yasuodesktop.jpg');
+    background-image: url('./anh_nen/dev.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 @media (min-width: 768px) {
     .hiden-on-desktop {
@@ -15,7 +16,7 @@ body {
     }
     
     body {
-        background-image: url('./anh_nen/yasuomobile.jpg');
+        background-image: url('./anh_nen/dev.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }

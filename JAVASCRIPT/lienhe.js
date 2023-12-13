@@ -12,8 +12,6 @@ const observer = new IntersectionObserver((entries) => {
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-
-
 const slide = document.querySelectorAll('.hidden-showslideR');
 
 const observer2 = new IntersectionObserver((entries) => {
