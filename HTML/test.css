@@ -21,9 +21,27 @@
   backdrop-filter: blur(10px);
   opacity: 0;
 }
+/**** IMG card****/
 .img-fluidd {
   border-radius: 20px 40px 15px 40px;
 }
+.hide-img-over {
+  overflow: hidden;
+}
+.card-text {
+  color: rgb(215, 204, 238);
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+.card {
+  transition: all 0.5s ease;
+}
+.card:hover {
+  
+  transform: scale(1.01) translateY(-20px);
+}
+/******/
 .avt {
   height: 150px;
   width: 150px;
@@ -80,6 +98,20 @@ h5 {
   border-radius: 10px;
   background-color: rgba(62, 60, 7, 0.563);
 }
+
+.hidden {
+  
+  padding: 8px 15px;
+  background-color: #5d169300;
+  border-radius: 8px;
+  transition: all 0.5s ease 0.5s;
+}
+.show {
+  
+  background-color: #5d1693;
+}
+
+
 /****/
 @keyframes doiMau {
   from {
