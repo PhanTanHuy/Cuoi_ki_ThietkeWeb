@@ -241,7 +241,28 @@ h3 {
     box-sizing: border-box;
     /* font-family: 'Poppins', sans-serif; */
 }
-
+.zoomtext {
+    position: relative;
+    height: 30px;
+    width: 170px;
+}
+.zoomtext::before {
+    position: absolute;
+    content: '';
+    background-color:#925eca;
+    left: -20px;
+    height: 100%;
+    width: 0%;
+    border-radius: 0 20px 20px 0;
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.zoomtext:hover {
+    transform: translateX(10px);
+}
+.zoomtext:hover::before {
+    width: 100%;
+}
 ::selection {
     background: rgba(23, 162, 184, 0.3);
 }
