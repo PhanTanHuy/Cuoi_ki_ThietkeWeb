@@ -16,6 +16,7 @@
     color: white;
     z-index: 1;
     width: auto;
+    height: 100%;
 }
 .hyper-link-button::before {
     content: '';
@@ -37,6 +38,9 @@
 .hyper-link-button:hover .translateY-text {
     transform: translateY(-5px);
 }
+.nav-link {
+    padding: 0px 8px !important;
+}
 .nav-item {
-    padding: 0px 10px;
+    padding: 0px 10px !important;
 }
