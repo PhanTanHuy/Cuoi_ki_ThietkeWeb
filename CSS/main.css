@@ -29,6 +29,17 @@
     z-index: -1;
     transition: all 0.3s ease;
 }
+.hyper-link-buttonZ::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(to right, #6a5af9, #f95ade);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
 .hyper-link-button:hover::before {
     width: 100%;
 }
