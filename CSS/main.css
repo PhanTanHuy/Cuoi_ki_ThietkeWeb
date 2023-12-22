@@ -7,3 +7,36 @@
     border-radius: 10px;
     color: white;
 }
+.hyper-link-button {
+    font-weight: 700;
+    border: none;
+    outline: none;
+    position: relative;
+    background-color: #ffffff00;
+    color: white;
+    z-index: 1;
+    width: auto;
+}
+.hyper-link-button::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 10%;
+    background-image: linear-gradient(to right, #6a5af9, #f95ade);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.hyper-link-button:hover::before {
+    width: 100%;
+}
+.translateY-text {
+    transition: all 0.3s ease;
+}
+.hyper-link-button:hover .translateY-text {
+    transform: translateY(-5px);
+}
+.nav-item {
+    padding: 0px 10px;
+}
