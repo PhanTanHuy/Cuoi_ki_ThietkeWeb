@@ -18,7 +18,10 @@ function layThongTin (){
         var myDiv = document.getElementById('password');
         myDiv.classList.remove('is-invalid');
     }
-    if (user  != '' && password1 != ''){
+    if (password1.length < 8){
+        myDiv.classList.add('is-invalid');
+    }
+    if (user  != '' && password1 != '' && password1.length >= 8){
         setTimeout(function() {
             window.location.href = "../HTML/trangchu.html";
         }, 1000);
